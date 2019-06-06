@@ -1,5 +1,6 @@
 import os
-import pyrealsense2 as rs
+# import pyrealsense2 as rs
+rs  = {}
 import numpy as np
 import cv2 as cv
 import shutil
@@ -141,8 +142,8 @@ if __name__ == "__main__":
         dirs = [int(d) for d in dirs]
         next_id = 0 if len(dirs) == 0 else max(dirs) + 1
 
-    generate_samples()
-    # train_test_split()
+    # generate_samples()
+    train_test_split()
     #
     # print("Starting for %s with next_id = %d" % (INGREDIENT, next_id))
     # get_images(next_id)
